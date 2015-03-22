@@ -1,0 +1,2 @@
+1.无法播放flv视频 
+github star 里有videojs

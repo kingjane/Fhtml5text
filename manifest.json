@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Force html5 video",
+	"version": "1.0",
+
+	"description": "Force webpage video to html5 video to achieve FF RW and so on.",
+	"icons": { "48": "icon.png" },
+	"author": "kingjane",
+	"permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "tabs",
+      "<all_urls>"],
+   	 "background": {
+		"scripts": ["bg.js"],
+		"persistent": true
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://example.org/"],
+			"js": ["cont.js"]
+		}
+	]
+}
